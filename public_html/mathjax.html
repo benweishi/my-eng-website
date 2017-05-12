@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Fri, 12 May 2017 07:22:10 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="MathJax">
+    <title>MathJax TeX Test Page</title>
+	<script type="text/javascript" async
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  </head>
+  <body>
+	<p>MathJax allows you to include mathematics in your web pages using LaTeX notation. For detail, see <a href="http://docs.mathjax.org/en/latest/start.html">Getting Started with MathJax</a>.</p>
+	<p>The easiest way to use MathJax is putting this code into the &lt;head&gt; block.</p>
+
+	<pre>&lt;script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"&gt;
+&lt;/script&gt;</pre>
+Now, some text like this in &lt;body&gt;:
+<pre>
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+</pre>
+will disply as:<br>
+
+    <p>When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+
+	<p>You may noticed that $...$ are not used by default, but you can active it by adding below code into the &lt;head&gt; block.</p>
+
+	<pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/x-mathjax-config"</span><span class="p">&gt;</span>
+<span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+  <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span><span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[[</span><span class="s1">'$'</span><span class="p">,</span><span class="s1">'$'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'\\('</span><span class="p">,</span><span class="s1">'\\)'</span><span class="p">]]}</span>
+<span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/javascript"</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">"path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre>
+
+caveats
+  <ul>
+    <li>Putting a space on both sides of the less-than sign</li>
+  </ul>
+  </body>
+</html>
